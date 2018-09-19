@@ -1,0 +1,30 @@
+{
+	"name": "ssr",
+	"version": "1.0.0",
+	"main": "index.js",
+	"module": "main.js",
+	"scripts": {
+		"dev": "nodemon index.js",
+		"dev:compile": "rollup --config rollup.config.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"esm": "^3.0.84",
+		"koa": "^2.5.3",
+		"koa-static": "^5.0.0",
+		"puppeteer": "^1.8.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.4",
+		"rollup": "^0.66.0"
+	},
+	"description": "Basic Web Components SSR Example",
+	"nodemonConfig": {
+		"ext": "js,json,scss",
+		"ignore": [
+			"public/",
+			"node_modules/"
+		]
+	}
+}
