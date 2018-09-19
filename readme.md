@@ -1,6 +1,7 @@
 # Web Components + Shadow Dom SSR
 
 MVP demo server side rendering of web components and shadow dom using headless chrome.
+Using [esm](https://github.com/standard-things/esm) so we can import / export ALL THE THINGS in node
 
 ### Todo
 
