@@ -1,6 +1,7 @@
-# U.S.U.C.K
+# Web Components SSR Demo (WIP)
 
-Universal standards uber crappy k(frameworks)
+MVP demo server side rendering of web components and shadow dom using headless chrome.
+Using esm so we can import / export ALL THE THINGS in node
 
 ## Ideal
 
