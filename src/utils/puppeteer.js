@@ -1,5 +1,10 @@
 import puppeteer from "puppeteer";
 
+// const renderedHTML = await ssr(
+// 	`${ctx.protocol}://${ctx.host}/${ctx.params.page}`
+// );
+// console.log(renderedHTML);
+
 // In-memory cache of rendered pages. Note: this will be cleared whenever the
 // server process stops. If you need true persistence, use something like
 // Google Cloud Storage (https://firebase.google.com/docs/storage/web/start).
@@ -19,6 +24,7 @@ async function ssr(url, html) {
 	page.evaluateOnNewDocument("ShadyDOM = {force: true}");
 	page.evaluateOnNewDocument("ShadyCSS = {shimcssproperties: true}");
 	await page.goto(`data:text/html,${html}`, { waitUntil: "networkidle0" });
+	// await page.setContent(html, { waitUntil: "networkidle0" });
 
 	const renderedHTML = await page.content(); // serialized renderedHTML of page DOM.
 	await browser.close();

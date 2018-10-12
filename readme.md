@@ -1,6 +1,14 @@
-# Web Components + Shadow Dom SSR
+# U.S.U.C.K
 
-MVP demo server side rendering of web components and shadow dom using headless chrome.
+Universal standards uber crappy k(frameworks)
+
+## Ideal
+
+-   [x] Clean Interfaces (Easy to replace [rendering / scss / jss])
+-   [x] Offline First
+-   [x] Web Standards
+-   [x] SSR
+-   [ ] Universal State management
 
 ### Todo
 
